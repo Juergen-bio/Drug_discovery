@@ -12,7 +12,7 @@ The project follows a standard cheminformatics machine learning workflow:
   * **Feature Engineering**: Molecular structures, represented as SMILES strings, were converted into numerical features. Two types of features were used:
     1.  **Physicochemical Descriptors**: Properties like Molecular Weight (MW), LogP, and hydrogen bond donors/acceptors were calculated.
     2.  **Molecular Fingerprints**: Morgan fingerprints (`nBits=2048`, `radius=2`) were generated to encode the presence of specific molecular substructures.
-  * **Feature Selection**: A `VarianceThreshold` filter was applied to remove low-variance fingerprint bits, reducing the feature space from over 2000 to just 60, and focusing the model on the most informative features.
+  * **Feature Selection**: A `VarianceThreshold` filter was applied to remove low-variance fingerprint bits, reducing the feature space from over 2000 to just 60 (Pulling you own data depending on the date, can see this features change should the Chembl database be changed), and focusing the model on the most informative features.
   * **Model Training**: A **Random Forest Regressor** was trained on the prepared features. The model was trained on a subset of the data and evaluated on a separate, unseen test set to ensure robust performance.
   * **Model Evaluation**: The model's performance was evaluated using the **R-squared ($R^2$) score** and a visualization of predicted vs. actual values.
 
