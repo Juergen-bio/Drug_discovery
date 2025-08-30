@@ -50,7 +50,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn rdkit
 
 1.  Clone this repository to your local machine.
 2.  Install the required libraries.
-3.  Open the `01_drug_discovery_ai.ipynb` Jupyter Notebook.
+3.  Open the `data_collection.ipynb` Jupyter Notebook.
 4.  Run all cells to execute the full pipeline from data cleaning to model evaluation.
 
 -----
