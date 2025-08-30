@@ -26,10 +26,13 @@ The trained Random Forest model achieved a robust **$R^2$ score of 0.717** on th
 
 ### Repository Structure
 
-  * `01_drug_discovery_ai.ipynb`: A Jupyter Notebook containing the full code for the data retrieval, preparation, modeling, and evaluation.
-  * `chembl_data.csv`: The raw dataset retrieved from ChEMBL.
+  * `data_collection.ipynb`: A Jupyter notebook that collects the data from ChEMBL database.
+  * `data_wrangling.ipynb`: Understanding the raw data and its parameters and cleaning it eg (removing null values).
+  * `data_analysis.ipynb`: .Feature generation ie Morgan fingerpints
   * `fingerprinted_data.csv`: The cleaned and feature-engineered dataset containing all the final features for modeling.
+  * `model_training.ipynb`: When the model learns and makes prediction.
   * `README.md`: This file.
+  * `Requirement.yml`: Containes all the dependecies of this project (generated on the conda env).
 
 -----
 
